@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/result.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/prediction.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/layout.css')}}" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css" rel="stylesheet">
+        body {
+            height: 100vh;
+            background-color: rgb(6, 20, 32);
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="tnb">
+            <div class="left_nav">
+                <img src="{{url_for('static',filename='images/breast-cancer-logo.jpeg')}}" alt="logo" />
+                <div class="site_name">
+                    <p><b>BREAST CANCER</b></p>
+                    <p><b>PREDICTION</b></p>
+                </div>
+
+            </div>
+            <div class="search">
+                <form action="">
+                    <input type="search" id="srch" name="search" placeholder="Search..." />
+                    <button type="submit"><i class="fa fa-search">.</i></button>
+                </form>
+
+            </div>
+            <div class="log">
+                <div class="login">
+                    <a href="/login">Log-in</a>
+                </div>
+                <div class="signin">
+                    <a href="/signin">Sign-in</a>
+                </div>
+            </div>
+            <div class="socail">
+                <div class="facebook"><a href="https://www.facebook.com/profile.php?id=100035185204760&mibextid=ZbWKwL"
+                        class="fa fa-facebook"></a></div>
+                <div class="instagram"><a href="https://www.instagram.com/jayprit_62" class="fa fa-instagram"></a></div>
+                <div class="linkedin"><a href="https://www.linkedin.com/in/pritamroy302" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul id="hide">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/service">SERVICE</a></li>
+                <li><a href="/course">PREDICTION</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+            </ul>
+            <div class="menu_icon">
+                <label for="clck" onclick="myFunction()">
+                    &#9776
+                </label>
+            </div>
+        </div>
+    </header>
+    <div class="im">
+        <img src="{{url_for('static',filename='images/can.jpg')}}" alt="breast cancer" />
+        <span><B>PREDICTION</B></span>
+    </div>
+    <div class="rstx">
+        <p>
+            {{name}}
+            {{outp}}
+        </p>
+        <p>
+            {{pname}}
+            {{a}}
+        </p>
+    </div>
+</html>

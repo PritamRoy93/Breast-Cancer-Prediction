@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/prediction.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/layout.css')}}" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css" rel="stylesheet">
+        body {
+            height: 100vh;
+            background-color: rgb(6, 20, 32);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="tnb">
+            <div class="left_nav">
+                <img src="{{url_for('static',filename='images/breast-cancer-logo.jpeg')}}" alt="logo" />
+                <div class="site_name">
+                    <p><b>BREAST CANCER</b></p>
+                    <p><b>PREDICTION</b></p>
+                </div>
+
+            </div>
+            <div class="search">
+                <form action="">
+                    <input type="search" id="srch" name="search" placeholder="Search..." />
+                    <button type="submit"><i class="fa fa-search">.</i></button>
+                </form>
+
+            </div>
+            <div class="log">
+                <div class="login">
+                    <a href="/login">Log-in</a>
+                </div>
+                <div class="signin">
+                    <a href="/signin">Sign-in</a>
+                </div>
+            </div>
+            <div class="socail">
+                <div class="facebook"><a href="https://www.facebook.com/profile.php?id=100035185204760&mibextid=ZbWKwL"
+                        class="fa fa-facebook"></a></div>
+                <div class="instagram"><a href="https://www.instagram.com/jayprit_62" class="fa fa-instagram"></a></div>
+                <div class="linkedin"><a href="https://www.linkedin.com/in/pritamroy302" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul id="hide">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/service">SERVICE</a></li>
+                <li><a href="/course">PREDICTION</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+            </ul>
+            <div class="menu_icon">
+                <label for="clck" onclick="myFunction()">
+                    &#9776
+                </label>
+            </div>
+        </div>
+
+
+    </header>
+
+    <div class="im">
+        <img src="{{url_for('static',filename='images/can.jpg')}}" alt="breast cancer" />
+        <span><B>PREDICTION</B></span>
+    </div>
+
+
+
+    <form class="data" action="result" method="post">
+        <input type="text" name="name" placeholder="Enter Your Name" /><br>
+        <input type="text" name="f1" placeholder="Enter Radius_Mean" /><br>
+        <input type="text" name="f2" placeholder="Enter  Texture_Mean" /><br>
+        <input type="text" name="f3" placeholder="Enter Perimeter_Mean" /><br>
+        <input type="text" name="f4" placeholder="Enter Area_Mean" /><br>
+        <input type="text" name="f5" placeholder="Enter Smoothness_Mean" /><br>
+        <input type="text" name="f6" placeholder="Enter Compactness_Mean" /><br>
+        <input type="text" name="f7" placeholder="Enter Concavity_Mean" /><br>
+        <input type="text" name="f8" placeholder="Enter Concave Points_Mean" /><br>
+        <input type="text" name="f9" placeholder="Enter Symmetry_Mean  " /><br>
+        <input type="text" name="f10" placeholder="Enter Fractal_Dimension_Mean" /><br>
+        <input type="text" name="f11" placeholder="Enter Radius_Se" /><br>
+        <input type="text" name="f12" placeholder="Enter Texture_Se" /><br>
+        <input type="text" name="f13" placeholder="Enter Perimeter_Se" /><br>
+        <input type="text" name="f14" placeholder="Enter Area_Se" /><br>
+        <input type="text" name="f15" placeholder="Enter Smoothness_Se" /><br>
+        <input type="text" name="f16" placeholder="Enter Compactness_Se" /><br>
+        <input type="text" name="f17" placeholder="Enter Concavity_Se" /><br>
+        <input type="text" name="f18" placeholder="Enter Concave Points_Se" /><br>
+        <input type="text" name="f19" placeholder="Enter Symmetry_Se" /><br>
+        <input type="text" name="f20" placeholder="Enter Fractal_Dimension_Mean" /><br>
+        <input type="text" name="f21" placeholder="Enter Radius_Worst" /><br>
+        <input type="text" name="f22" placeholder="Enter Texture_Worst" /><br>
+        <input type="text" name="f23" placeholder="Enter Perimeter_Worst" /><br>
+        <input type="text" name="f24" placeholder="Enter Area_Worst" /><br>
+        <input type="text" name="f25" placeholder="Enter Smoothness_Worst" /><br>
+        <input type="text" name="f26" placeholder="Enter Compactness_Worst" /><br>
+        <input type="text" name="f27" placeholder="Enter Concavity_Worst" /><br>
+        <input type="text" name="f28" placeholder="Enter Concave Points_Worst" /><br>
+        <input type="text" name="f29" placeholder="Enter Symmetry_Worst" /><br>
+        <input type="text" name="f30" placeholder="Enter Fractal_Dimension_Mean" /><br>
+        <button type="submit" id="sub"><b>PREDICT</b></button>
+
+    </form>
+
+
+    <footer class="footer">
+        <p>Copyright &copy;2024 BREAST CANCER PREDICTION. All Rights Reserved.Privacy Policy</p>
+    </footer>
+
+    <script type="text/javascript" src="{{url_for('static',filename='script/script.js')}}">
+    </script>
+</body>
+
+</html>

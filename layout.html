@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%block title%}
+    <title>Layout</title>
+    {%endblock%}
+
+    {% block style %}
+    {%endblock%}
+    <!--<style>
+        body{
+            background-image: url("{{url_for('static', filename='images/breast-cancer-bacground.jpeg')}}");
+            background-size: 1000px;
+            background-attachment: fixed;
+        }
+    </style>-->
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/layout.css')}}" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="tnb">
+            <div class="left_nav">
+                <img src="{{url_for('static',filename='images/breast-cancer-logo.jpeg')}}" alt="logo" />
+                <div class="site_name">
+                    <p><b>BREAST CANCER</b></p>
+                    <p><b>PREDICTION</b></p>
+                </div>
+
+            </div>
+            <div class="search">
+                <form action="">
+                    <input type="search" id="srch" name="search" placeholder="Search..." />
+                    <button type="submit"><i class="fa fa-search">.</i></button>
+                </form>
+
+            </div>
+            <div class="log">
+                <div class="login">
+                    <a href="/login">Log-in</a>
+                </div>
+                <div class="signin">
+                    <a href="/signin">Sign-in</a>
+                </div>
+            </div>
+            <div class="socail">
+                <div class="facebook"><a href="https://www.facebook.com/profile.php?id=100035185204760&mibextid=ZbWKwL"
+                        class="fa fa-facebook"></a></div>
+                <div class="instagram"><a href="https://www.instagram.com/jayprit_62" class="fa fa-instagram"></a></div>
+                <div class="linkedin"><a href="https://www.linkedin.com/in/pritamroy302" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="#ser">SERVICE</a></li>
+                <li><a href="/course">PREDICTION</a></li>
+                <li><a href="#cont11">ABOUT</a></li>
+                <li><a href="#cont">CONTACT</a></li>
+            </ul>
+            <div class="menu_icon">
+                <label for="clck" onclick="myFunction()">
+                    &#9776
+                </label>
+            </div>
+        </div>
+
+
+    </header>
+
+
+
+    {% block contain %}
+    {% endblock %}
+
+    <section class="front">
+
+
+        <div class="front-btn">
+            <div class="para">
+                <h2>Breast Cancer</h2>
+                <h4>The Risk Factors</h4>
+                <div class="learn">
+                    <button onclick="showhide()" id="show-hide">Learn More</button>
+                </div>
+            </div>
+
+            <div class="design-fnt" id="dnfn">
+                <img src="{{url_for('static',filename='images/design-font.jpg')}}" alt="logo" />
+                <span id="hide">The main factors that influence your risk include being a woman and getting older.Most
+                    breast<br>
+                    cancers are found in women who are 50 years old or older.Some women will get breast cancer<br>even
+                    without any other risk factors that they know of. Having a risk factor does not mean you<br> will
+                    get the disease, and not all risk factors have the same effect. Most women have some risk<br>
+                    factors,
+                    but most women do not get breast cancer.Talk with your doctor about ways you can lower<br>your risk
+                    and about screening for breast cancer.
+                </span>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="discuss">
+        <div class="dis">
+            <div class="dis1">
+                <img src="{{url_for('static',filename='images/breast-cancer-logo.jpeg')}}" alt="logo" />
+                <div class="txt">
+                    <h3>What is breast cancer?</h3>
+                    <p>
+                        jhhjhnkjsbndbsbchbasjncajc<br>
+                        bHszncbcbjagfkjsvskjhhdgjhd<br>
+                        sadvhabfjkjsefhkj,nfnjdjvsdv<br>
+                        agsvhjsfgasddfhghjsjhcj<br>
+                        hjgsdjhfkjsejefhbzdmsdnbfhjgs<br>
+                        fmsgjefhgewjhdhajshjahjgsafvgdwh<br>
+                        jfgcshjfashjkagjgeyfkgshfgyg<br>
+                        agsvhjsfgasddfhghjsjhcj<br>
+                        jfgcshjfashjkagjgeyfkgshfgyg<br>
+                    </p>
+                </div>
+
+            </div>
+            <div class="dis2">
+
+                <div class="txt">
+                    <h3>What is breast cancer?</h3>
+                    <p>
+                        jhhjhnkjsbndbsbchbasjncajc<br>
+                        bHszncbcbjagfkjsvskjhhdgjhd<br>
+                        sadvhabfjkjsefhkj,nfnjdjvsdv<br>
+                        agsvhjsfgasddfhghjsjhcj<br>
+                        hjgsdjhfkjsejefhbzdmsdnbfhjgs<br>
+                        fmsgjefhgewjhdhajshjahjgsafvgdwh<br>
+                        jfgcshjfashjkagjgeyfkgshfgyg<br>
+                        agsvhjsfgasddfhghjsjhcj<br>
+                        hjgsdjhfkjsejefhbzdmsdnbfhjgs<br>
+                        fmsgjefhgewjhdhajshjahjgsafvgdwh<br>
+                        jfgcshjfashjkagjgeyfkgshfgyg<br>
+                    </p>
+                </div>
+                <img src="{{url_for('static',filename='images/breast-cancer-logo.jpeg')}}" alt="logo" />
+
+            </div>
+            <div class="dis3">
+                <img src="{{url_for('static',filename='images/breast-cancer-logo.jpeg')}}" alt="logo" />
+
+                <div class="txt">
+                    <h3>What is breast cancer?</h3>
+                    <p>
+                        jhhjhnkjsbndbsbchbasjncajc<br>
+                        bHszncbcbjagfkjsvskjhhdgjhd<br>
+                        sadvhabfjkjsefhkj,nfnjdjvsdv<br>
+                        agsvhjsfgasddfhghjsjhcj<br>
+                        hjgsdjhfkjsejefhbzdmsdnbfhjgs<br>
+                        fmsgjefhgewjhdhajshjahjgsafvgdwh<br>
+                        jfgcshjfashjkagjgeyfkgshfgyg<br>
+                        agsvhjsfgasddfhghjsjhcj<br>
+                        jfgcshjfashjkagjgeyfkgshfgyg<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ser">
+        <h1><b>Breast Cancer Treatment Hospitals in India</b></h1>
+        <div class="hos">
+            <div class="hos1">
+                <h2>
+                    <a href="https://www.clinicspots.com/hospital/indraprastha-apollo-hospitals">Apollo Hospital
+                        Delhi</a>
+                </h2>
+                <div class="apello">
+                    <p>* Diagnosis for breast cancer is done using the<br>
+                         most advanced technological equipment such<br>
+                         as Gallium 68 PET-CT Scan.</p><br>
+                    <p>
+                       * Over the last 2 decades,Apollo hospitals have<br>
+                         performed over 50,000 breast cancer surgeries.
+                    </p><br>
+                    <p>
+                       * This hospital is considered to be the best cancer<br>
+                         hospital in Chennai.
+                    </p>
+                </div>
+
+            </div>
+            <div class="hos2">
+                <h2>
+                    <a href="https://www.clinicspots.com/hospital/tata-memorial-hospital">Memorial Hospital</a>
+                </h2>
+                <div class="apello">
+                    <p>* Diagnosis for breast cancer is done using the<br>
+                         most advanced technological equipment such<br>
+                         as Gallium 68 PET-CT Scan.</p><br>
+                    <p>
+                       * Over the last 2 decades,Apollo hospitals have<br>
+                         performed over 50,000 breast cancer surgeries.
+                    </p><br>
+                    <p>
+                       * This hospital is considered to be the best cancer<br>
+                         hospital in Chennai.
+                    </p>
+                </div>
+
+            </div>
+            <div class="hos3">
+                <h2>
+                    <a href="https://www.clinicspots.com/hospital/apollo-hospital-6">Apollo Hospital</a>
+                </h2>
+                <div class="apello">
+                    <p>* Diagnosis for breast cancer is done using the<br>
+                         most advanced technological equipment such<br>
+                         as Gallium 68 PET-CT Scan.</p><br>
+                    <p>
+                       * Over the last 2 decades,Apollo hospitals have<br>
+                         performed over 50,000 breast cancer surgeries.
+                    </p><br>
+                    <p>
+                       * This hospital is considered to be the best cancer<br>
+                         hospital in Chennai.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="cont11">
+        <div class="team">
+            <h2><b>Our Team</b></h2>
+            <div class="person">
+                <div class="person1">
+                    <img src="{{url_for('static',filename='images/team.jpeg')}}" alt="logo" />
+                    <h3>P. ROY</h3>
+                    <h4>Full-Stack Web Developer</h4>
+                    <h4>Data scientist</h4>
+                    <div class="round">
+                        <p>"SEO is an just like a tree that <br>
+                            needs effort,patieence and time <br>
+                            to grow before you can see the <br>
+                            result."
+                        </p>
+                    </div>
+                    <div class="socail">
+                        <div class="facebook"><a
+                                href="https://www.facebook.com/profile.php?id=100035185204760&mibextid=ZbWKwL"
+                                class="fa fa-facebook"></a></div>
+                        <div class="instagram"><a href="https://www.instagram.com/jayprit_62"
+                                class="fa fa-instagram"></a></div>
+                        <div class="linkedin"><a href="https://www.linkedin.com/in/pritamroy302"
+                                class="fa fa-linkedin"></a></div>
+                    </div>
+                </div>
+                <div class="person2">
+                    <img src="{{url_for('static',filename='images/team.jpeg')}}" alt="logo" />
+                    <h3>S. JAIN</h3>
+                    <h4>Full-Stack-Developer</h4>
+                    <div class="round">
+                        <p>"SEO is an just like a tree that <br>
+                            needs effort,patieence and time <br>
+                            to grow before you can see the <br>
+                            result."
+                        </p>
+                    </div>
+                    <div class="socail">
+                        <div class="facebook"><a
+                                href="https://www.facebook.com/profile.php?id=100035185204760&mibextid=ZbWKwL"
+                                class="fa fa-facebook"></a></div>
+                        <div class="instagram"><a href="https://www.instagram.com/jayprit_62"
+                                class="fa fa-instagram"></a></div>
+                        <div class="linkedin"><a href="https://www.linkedin.com/in/pritamroy302"
+                                class="fa fa-linkedin"></a></div>
+                    </div>
+                </div>
+                <div class="person3">
+                    <img src="{{url_for('static',filename='images/team.jpeg')}}" alt="logo" />
+                    <h3>J. ROY</h3>
+                    <h4>Full-Stack-Developer</h4>
+                    <div class="round">
+                        <p>"SEO is an just like a tree that <br>
+                            needs effort,patieence and time <br>
+                            to grow before you can see the <br>
+                            result."
+                        </p>
+                    </div>
+                    <div class="socail">
+                        <div class="facebook"><a
+                                href="https://www.facebook.com/profile.php?id=100035185204760&mibextid=ZbWKwL"
+                                class="fa fa-facebook"></a></div>
+                        <div class="instagram"><a href="https://www.instagram.com/jayprit_62"
+                                class="fa fa-instagram"></a></div>
+                        <div class="linkedin"><a href="https://www.linkedin.com/in/pritamroy302"
+                                class="fa fa-linkedin"></a></div>
+                    </div>
+
+                </div>
+            </div>
+
+    </section>
+    <section class="contact" id="cont">
+            <h2><b>CONTACT-US</b></h2>
+        <div class="f-con">
+            <div class="lo">
+               
+              
+                <div class="con-flex-1">
+                    <div class="con-flex">
+                        <img src="{{url_for('static',filename='images/breast-cancer-logo.jpeg')}}" alt="logo" />
+                       </div> 
+                    <div class="flex-2">
+                        <p><b>BREAST CANCER</b></p>
+                        <p><b>PREDICTION</b></p>
+    
+                    </div>
+                </div>
+                
+            </div>
+            <div class="ad">
+                <p>
+                    Visit:
+                    Jaipaiguri,West Bengal,735224<br><br>
+                    Call:
+                    9382056439
+                    <br>
+                    <br>
+                    G-mail:
+                    pritamrj302@gmail.com
+                </p>
+            </div>
+            <div class="all-con">
+                <p>Policy</p>
+                <a href="#cont">Contact-Us</a><br>
+                <a href="#cont11">About-Us</a>
+                <div class="socail">
+                    <div class="facebook"><a
+                            href="https://www.facebook.com/profile.php?id=100035185204760&mibextid=ZbWKwL"
+                            class="fa fa-facebook"></a></div>
+                    <div class="instagram"><a href="https://www.instagram.com/jayprit_62"
+                            class="fa fa-instagram"></a></div>
+                    <div class="linkedin"><a href="https://www.linkedin.com/in/pritamroy302"
+                            class="fa fa-linkedin"></a></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Copyright &copy; 2024 BREAST CANCER PREDICTION. All Rights Reserved.Privacy Policy</p>
+    </footer>
+    <script type="text/javascript" src="{{url_for('static',filename='script/script.js')}}">
+    </script>
+</body>
+
+</html>
